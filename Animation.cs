@@ -1,6 +1,4 @@
-﻿// Developed for LilBytes by Softeq Development Corporation
-//
-using System;
+﻿using System;
 
 namespace Xam.iOS.Fab
 {

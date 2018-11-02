@@ -1,6 +1,4 @@
-﻿// Developed for LilBytes by Softeq Development Corporation
-//
-namespace Xam.iOS.Fab
+﻿namespace Xam.iOS.Fab
 {
     public enum FabAligment
     {

@@ -1,9 +1,4 @@
-// Developed for LilBytes by Softeq Development Corporation
-//
-
-using System;
 using System.Collections.Generic;
-using CoreGraphics;
 using Foundation;
 using UIKit;
 
