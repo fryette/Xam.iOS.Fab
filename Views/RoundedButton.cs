@@ -3,12 +3,12 @@ using CoreGraphics;
 using Foundation;
 using UIKit;
 
-namespace LilWatches.iOS.Views
+namespace Xam.iOS.Fab.Views
 {
     [Register("RoundedButton")]
     public class RoundedButton : UIButton
     {
-        private bool _isStylesApplied;
+        private bool _isStylesFirstApplied;
 
         public nfloat BorderWidth { get; set; }
         public UIColor BorderColor { get; set; }
@@ -43,19 +43,14 @@ namespace LilWatches.iOS.Views
         {
             base.LayoutSubviews();
 
-            if (_isStylesApplied)
-            {
-                return;
-            }
-
-            _isStylesApplied = true;
-
             Layer.CornerRadius = CornerRadius;
 
             ApplyShadow();
             ApplyBorder();
             ApplyDimensions();
             ApplyImages();
+
+            _isStylesFirstApplied = true;
         }
 
         private void ApplyShadow()
@@ -74,6 +69,10 @@ namespace LilWatches.iOS.Views
 
         private void ApplyImages()
         {
+            if (_isStylesFirstApplied)
+            {
+                return;
+            }
             if (NormalStateImage != null)
             {
                 SetImage(NormalStateImage, UIControlState.Normal);

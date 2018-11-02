@@ -12,13 +12,13 @@
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <PackOnBuild>true</PackOnBuild>
     <PackageId>Xam.iOS.Fab</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Yauhen Sampir</Authors>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageLicenseUrl>https://opensource.org/licenses/mit-license.php</PackageLicenseUrl>
     <Owners>Yauhen Sampir</Owners>
     <PackageProjectUrl>https://github.com/fryette/xam.iOS.Fab</PackageProjectUrl>
-    <Description>Library with Fab buttons</Description>
+    <Description>Custom control for your Xamarin.iOS project to render a floating action button in projects that target Xamarin.iOS</Description>
     <PackageReleaseNotes>First release</PackageReleaseNotes>
     <Title>iOS library with floating buttons</Title>
     <PackageTags>fab ios floating fabbutton fab-button floating-button xamarin xamarin.ios material </PackageTags>

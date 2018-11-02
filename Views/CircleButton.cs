@@ -2,13 +2,14 @@
 using CoreGraphics;
 using Foundation;
 using UIKit;
-using Xam.iOS.Fab;
 
-namespace LilWatches.iOS.Views
+namespace Xam.iOS.Fab.Views
 {
     [Register("CircleButton")]
     public class CircleButton : RoundedButton, ISwitchableUIView
     {
+        private int _diameter;
+
         public bool IsSelected
         {
             get => Selected;
@@ -18,8 +19,13 @@ namespace LilWatches.iOS.Views
         //because this is rounded button width = height, and you need to setup only one property
         public override int Height { get => Diameter; set => Diameter = value; }
         public override int Width { get => Diameter; set => Diameter = value; }
-        public int Diameter { get; set; }
-        public bool IsShadowAvailable { get; set; }
+        public int Diameter
+        {
+            get => _diameter == 0 ? (int)Bounds.Size.Width : _diameter;
+            set => _diameter = value;
+        }
+
+        public bool IsShadowAvailable { get; set; } = true;
         public Animation SelectedAnimation { get; set; }
         public Animation DeselectedAnimation { get; set; }
 
@@ -35,14 +41,18 @@ namespace LilWatches.iOS.Views
         {
             base.LayoutSubviews();
 
-            CornerRadius = 0.5f * Bounds.Size.Width;
+            CornerRadius = 0.5f * Diameter;
 
-            if (!IsShadowAvailable)
+            if (IsShadowAvailable)
             {
                 ShadowColor = UIColor.Gray;
                 ShadowOffset = new CGSize(0, 4);
                 ShadowOpacity = 0.85f;
                 ShadowRadius = 5;
+            }
+            else
+            {
+                ClipsToBounds = true;
             }
         }
 
