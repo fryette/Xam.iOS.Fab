@@ -1,0 +1,14 @@
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/bin/Debug/Xam.iOS.Fab.dll
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/bin/Debug/Xam.iOS.Fab.pdb
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/obj/Debug/optimized/
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.csproj.CoreCompileInputs.cache
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.dll
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.pdb
+/Users/ysampir/lil_mobile/LilWatches.iOS/Xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.csprojAssemblyReference.cache
+/Users/ysampir/repositories/xam.iOS.Fab/bin/Debug/Xam.iOS.Fab.dll
+/Users/ysampir/repositories/xam.iOS.Fab/bin/Debug/Xam.iOS.Fab.pdb
+/Users/ysampir/repositories/xam.iOS.Fab/obj/Debug/optimized/
+/Users/ysampir/repositories/xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.csprojAssemblyReference.cache
+/Users/ysampir/repositories/xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.csproj.CoreCompileInputs.cache
+/Users/ysampir/repositories/xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.dll
+/Users/ysampir/repositories/xam.iOS.Fab/obj/Debug/Xam.iOS.Fab.pdb
