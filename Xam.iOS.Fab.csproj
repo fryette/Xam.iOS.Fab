@@ -19,6 +19,10 @@
     <Owners>Yauhen Sampir</Owners>
     <PackageProjectUrl>https://github.com/fryette/xam.iOS.Fab</PackageProjectUrl>
     <Description>Library with Fab buttons</Description>
+    <PackageReleaseNotes>First release</PackageReleaseNotes>
+    <Title>iOS library with floating buttons</Title>
+    <PackageTags>fab ios floating fabbutton fab-button floating-button xamarin xamarin.ios material </PackageTags>
+    <Summary>Custom control for your Xamarin.iOS project to render a floating action button in projects that target Xamarin.iOS</Summary>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
