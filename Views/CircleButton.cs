@@ -60,11 +60,19 @@ namespace Xam.iOS.Fab.Views
         {
             if (IsSelected && DeselectedAnimation != null)
             {
-                Animate(DeselectedAnimation.Duration, DeselectedAnimation.Action, SwitchStateInternal);
+                Animate(DeselectedAnimation.Duration, DeselectedAnimation.Action, () =>
+                {
+                    SelectedAnimation.CompletedAction?.Invoke();
+                    SwitchStateInternal();
+                });
             }
             else if (SelectedAnimation != null)
             {
-                Animate(SelectedAnimation.Duration, SelectedAnimation.Action, SwitchStateInternal);
+                Animate(SelectedAnimation.Duration, SelectedAnimation.Action, () =>
+                {
+                    SelectedAnimation.CompletedAction?.Invoke();
+                    SwitchStateInternal();
+                });
             }
             else
             {

@@ -14,6 +14,8 @@ namespace Xam.iOS.Fab
         public int ActionItemSpacing { get; set; } = 10;
         public int SpaceBetweenMainButtonAndActionItems { get; set; } = 10;
 
+        public IReadOnlyList<UIView> ActionItems => _stackView.Subviews;
+
         public void Initialize(ISwitchableUIView switchableUIView, IEnumerable<NSLayoutConstraint> constraints)
         {
             InitializeInternal(switchableUIView, constraints);
